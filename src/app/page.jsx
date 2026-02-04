@@ -92,7 +92,7 @@ export default function HomePage() {
         <h2 className="text-5xl md:text-6xl font-bold mb-12 scroll-fade-in delay-100 lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]">hey there!</h2>
 
         <p className="text-gray-300 text-lg leading-relaxed mb-8 scroll-fade-in delay-300">
-          I'm Yash Raj, a passionate developer and designer based in{" "}
+          I'm <span className="font-bold mb-12 scroll-fade-in delay-100 text-transparent italic bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]">Yash Raj</span>, a passionate developer and designer based in{" "}
           <span className="text-white font-semibold">India</span>. I create
           beautiful, functional web experiences that make an impact. Always
           learning, always building!
@@ -104,12 +104,12 @@ export default function HomePage() {
 
           <span className="text-xl relative z-10">
             <img width="17" height="17" src="https://img.icons8.com/material/50/new-post.png" style={{ filter: "invert(1)" }} alt="new-post" /></span>
-          <a href="mailto:yashrajz.me@gmail.com" className="text-gray-400 font-medium tracking-wide relative z-10 group-hover:text-white transition-colors duration-300">yashrajz.me@gmail.com</a>
+          <a href="mailto:yashrajz.me@gmail.com" className="scroll-fade-in delay-100 text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]">yashrajz.me@gmail.com</a>
         </div>
 
         {/* Laptop Tooltip */}
         {showTooltip && (
-          <div className="inline-flex items-center gap-3 mt-16 bg-[#1a1a1a] border border-gray-800 rounded-full px-6 py-3 text-sm text-gray-300 scroll-fade-in delay-700">
+          <div className="inline-flex md:hidden items-center gap-3 mt-16 bg-[#1a1a1a] border border-gray-800 rounded px-6 py-3 text-sm text-gray-300 scroll-fade-in delay-700">
             <span className="">
               <img width="25" height="25" src="https://img.icons8.com/material/50/laptop.png" alt="laptop" />
             </span>

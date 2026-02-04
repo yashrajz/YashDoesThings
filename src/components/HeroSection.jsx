@@ -79,7 +79,7 @@ const DiamondSVG = () => (
 
 export default function HeroSection() {
     return (
-        <section className="min-h-screen flex items-center justify-center relative pt-20 pb-15 overflow-hidden bg-black mb-16">
+        <section className="min-h-screen flex items-center justify-center relative pt-20 pb-15 overflow-hidden bg-black mb-48">
 
             {/* Background Graphic Cluster */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
