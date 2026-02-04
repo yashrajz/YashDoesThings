@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 
+import TitleDecoration from "./TitleDecoration";
+
 const skills = [
     // Row 1
     ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
@@ -23,7 +25,7 @@ const containerVariants = {
         opacity: 1,
         transition: {
             delayChildren: 0.05, // Initial delay before animation starts
-            staggerChildren: 0.05, // Stagger delay between children
+            staggerChildren: 0.04, // Stagger delay between children
         },
     },
 };
@@ -56,13 +58,25 @@ export default function SkillsSection() {
     return (
         <section className="max-w-6xl mx-auto px-8 py-32" id="stack">
             <motion.h2
-                className="text-5xl md:text-6xl font-bold text-center mb-20 lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]"
+                className="text-center mb-20 lowercase drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]"
+                style={{
+                    fontFamily: "'Gilroy-Bold', 'Gilroy-Bold Placeholder', sans-serif",
+                    fontWeight: 600,
+                    fontSize: '54px',
+                    lineHeight: '58.44px',
+                    color: 'rgb(243, 243, 243)',
+                    letterSpacing: '-0.03em'
+                }}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 1, ease: "easeOut" }}
             >
-                Stack I Ship With
+                <div className="flex items-center justify-center gap-8 md:gap-16">
+                    <TitleDecoration />
+                    <span>Stack I Ship <br /> With</span>
+                    <TitleDecoration />
+                </div>
             </motion.h2>
 
             {/* Stagger container with cloud layout */}

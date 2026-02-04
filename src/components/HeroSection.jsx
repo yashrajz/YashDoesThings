@@ -84,7 +84,7 @@ export default function HeroSection() {
             {/* Background Graphic Cluster */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
 
-                <div className="relative w-[300px] h-[300px] md:w-[500px] md:h-[400px] scale-125 md:scale-150">
+                <div className="relative w-[300px] h-[300px] md:w-[500px] md:h-[400px] scale-110 md:scale-150">
 
                     {/* Left Line Group */}
                     <div className="absolute left-[-30px] top-[45%] h-[138px] flex flex-col items-center">
@@ -109,17 +109,18 @@ export default function HeroSection() {
                     </div>
 
                     {/* Top/Center Line Group - Above Phone*/}
-                    <div className="absolute left-[200px] md:left-[140px] top-[-20px] h-[178px] flex flex-col items-center">
+                    <div className="absolute left-[120px] md:left-[140px] md:top-[-20px] top-[-55px] h-[178px] flex flex-col items-center">
                         <svg viewBox="0 0 3 178" height="100%" width="3" className="opacity-50">
                             <path d="M 1.8 178 L 1.8 0" fill="transparent" strokeWidth="0.8" stroke="rgba(255,255,255,0.46)" strokeMiterlimit="10" strokeDasharray="4 4" />
                         </svg>
                         <motion.div className="absolute top-0" variants={diamondReverseVariants} animate="animate" transition={{ delay: 1.5 }} style={{ marginTop: '90px' }}>
                             <DiamondSVG />
                         </motion.div>
+                        
                     </div>
 
                     {/* Phone Wireframe - Overlapping/Next to Laptop */}
-                    <div className="absolute left-[130px] md:left-[140px] top-[-25%] w-[180px] md:w-[400px]">
+                    <div className="absolute left-[130px] md:left-[140px] md:top-[-25%] w-[180px] md:w-[400px]">
                         <svg viewBox="0 0 240 292" width="100%" height="100%">
                             <path d="M 73.466 84.534 L 158.737 84.534 L 158.737 84.054 L 73.466 84.054 Z M 178.197 103.948 L 178.197 244.054 L 178.677 244.054 L 178.677 103.948 Z M 54.007 244.054 L 54.007 103.948 L 53.527 103.948 L 53.527 244.054 Z M 158.737 84.534 C 169.484 84.534 178.197 93.226 178.197 103.948 L 178.677 103.948 C 178.677 92.961 169.75 84.054 158.737 84.054 Z M 73.466 84.054 C 62.454 84.054 53.527 92.961 53.527 103.948 L 54.007 103.948 C 54.007 93.226 62.719 84.534 73.466 84.534 Z" fill="rgb(117,117,117)" />
                             <g>
@@ -161,7 +162,7 @@ export default function HeroSection() {
 
             {/* Main Text Overlapping */}
             <motion.div
-                className="relative z-10 text-center mt-40 flex flex-col items-center justify-center"
+                className="relative z-10 text-center mt-20 md:mt-40 flex flex-col items-center justify-center"
                 variants={heroContainerVariants}
                 initial="hidden"
                 animate="visible"
@@ -169,19 +170,21 @@ export default function HeroSection() {
                 <h1 className="font-bold tracking-tight leading-[0.5] flex flex-col items-center justify-center">
                     <motion.span
                         variants={nameVariants}
-                        className="text-8xl md:text-[160px] lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)] z-10"
+                        className="text-7xl md:text-[160px] lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)] z-10"
+                        style={{ fontFamily: "'Gilroy-Bold', 'Gilroy-Bold Placeholder', sans-serif" }}
                     >
                         yash
                     </motion.span>
                     <motion.span
                         variants={nameVariants}
-                        className="text-8xl md:text-[160px] lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)] z-10 -mt-2 md:-mt-6"
+                        className="text-7xl md:text-[160px] lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)] z-10 -mt-2 md:-mt-14"
+                        style={{ fontFamily: "'Gilroy-Bold', 'Gilroy-Bold Placeholder', sans-serif" }}
                     >
                         raj
                     </motion.span>
                 </h1>
                 <motion.p
-                    className="text-gray-400 text-sm md:text-xl tracking-wide font-light"
+                    className="text-sm md:text-xl tracking-wide font-light " style={{ fontFamily: "'Gilroy-Bold', 'Gilroy-Bold Placeholder', sans-serif", color: "rgb(243, 243, 243)" }}
                     variants={taglineVariants}
                 >
                     designing for impact and delight

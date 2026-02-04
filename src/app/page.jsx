@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import HeroSection from "../components/HeroSection";
 import FlowersSection from "../components/FlowersSection";
 import SkillsSection from "../components/SkillsSection";
+import ProjectsSection from "../components/ProjectsSection";
 
 export default function HomePage() {
   const [showTooltip, setShowTooltip] = useState(true);
@@ -92,7 +93,7 @@ export default function HomePage() {
         <h2 className="text-5xl md:text-6xl font-bold mb-12 scroll-fade-in delay-100 lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]">hey there!</h2>
 
         <p className="text-gray-300 text-lg leading-relaxed mb-8 scroll-fade-in delay-300">
-          I'm <span className="font-bold mb-12 scroll-fade-in delay-100 text-transparent italic bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]">Yash Raj</span>, a passionate developer and designer based in{" "}
+          I'm <span className="font-bold mb-12 scroll-fade-in delay-100 underline text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]" style={{ fontFamily: "'Gilroy-Bold', 'Gilroy-Bold Placeholder', sans-serif" }}>Yash Raj</span>, a passionate developer and designer based in{" "}
           <span className="text-white font-semibold">India</span>. I create
           beautiful, functional web experiences that make an impact. Always
           learning, always building!
@@ -126,7 +127,11 @@ export default function HomePage() {
 
 
       {/* Skills Section - Framer Motion */}
+      {/* Skills Section - Framer Motion */}
       <SkillsSection />
+
+      {/* Projects Section - Framer Motion */}
+      <ProjectsSection />
 
 
       {/* Sparkles scattered */}

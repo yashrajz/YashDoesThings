@@ -15,6 +15,7 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
         <Meta />
         <Links />
       </head>
@@ -29,7 +30,7 @@ export default function App() {
 
 export function ErrorBoundary() {
   const error = useRouteError();
-  
+
   return (
     <html lang="en">
       <head>
