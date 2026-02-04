@@ -67,21 +67,21 @@ const DiamondSVG = () => (
 
 export default function HeroSection() {
     return (
-        <section className="min-h-screen flex items-center justify-center relative pt-20 pb-32 overflow-hidden bg-black">
+        <section className="min-h-screen flex items-center justify-center relative pt-20 pb-15 overflow-hidden bg-black">
 
             {/* Background Graphic Cluster */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
 
-                <div className="relative w-[300px] h-[300px] md:w-[500px] md:h-[400px]">
+                <div className="relative w-[300px] h-[300px] md:w-[500px] md:h-[400px] scale-125 md:scale-150">
 
                     {/* Left Line Group */}
-                    <div className="absolute left-[-40px] top-[20%] h-[138px] flex flex-col items-center">
+                    <div className="absolute left-[-30px] top-[45%] h-[138px] flex flex-col items-center">
                         <svg viewBox="0 0 4 138" height="100%" width="4" className="opacity-50">
                             <path d="M 1.8 138 L 1.8 0" fill="transparent" strokeWidth="0.8" stroke="rgba(255,255,255,0.46)" strokeMiterlimit="10" strokeDasharray="4 4" />
                         </svg>
-                        <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" style={{ marginTop: '20px' }}>
+                        {/* <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" style={{ marginTop: '20px' }}>
                             <DiamondSVG />
-                        </motion.div>
+                        </motion.div> */}
                         <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" transition={{ delay: 1 }} style={{ marginTop: '80px' }}>
                             <DiamondSVG />
                         </motion.div>
@@ -97,20 +97,20 @@ export default function HeroSection() {
                     </div>
 
                     {/* Top/Center Line Group - Above Phone*/}
-                    <div className="absolute left-[200px] md:left-[260px] top-[-50px] h-[178px] flex flex-col items-center">
+                    <div className="absolute left-[200px] md:left-[140px] top-[-20px] h-[178px] flex flex-col items-center">
                         <svg viewBox="0 0 3 178" height="100%" width="3" className="opacity-50">
                             <path d="M 1.8 178 L 1.8 0" fill="transparent" strokeWidth="0.8" stroke="rgba(255,255,255,0.46)" strokeMiterlimit="10" strokeDasharray="4 4" />
                         </svg>
-                        <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" transition={{ delay: 0.5 }} style={{ marginTop: '10px' }}>
+                        {/* <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" transition={{ delay: 0.5 }} style={{ marginTop: '10px' }}>
                             <DiamondSVG />
-                        </motion.div>
+                        </motion.div> */}
                         <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" transition={{ delay: 1.5 }} style={{ marginTop: '90px' }}>
                             <DiamondSVG />
                         </motion.div>
                     </div>
 
                     {/* Phone Wireframe - Overlapping/Next to Laptop */}
-                    <div className="absolute left-[130px] md:left-[180px] top-[10%] w-[160px] md:w-[200px]">
+                    <div className="absolute left-[130px] md:left-[140px] top-[-25%] w-[180px] md:w-[400px]">
                         <svg viewBox="0 0 240 292" width="100%" height="100%">
                             <path d="M 73.466 84.534 L 158.737 84.534 L 158.737 84.054 L 73.466 84.054 Z M 178.197 103.948 L 178.197 244.054 L 178.677 244.054 L 178.677 103.948 Z M 54.007 244.054 L 54.007 103.948 L 53.527 103.948 L 53.527 244.054 Z M 158.737 84.534 C 169.484 84.534 178.197 93.226 178.197 103.948 L 178.677 103.948 C 178.677 92.961 169.75 84.054 158.737 84.054 Z M 73.466 84.054 C 62.454 84.054 53.527 92.961 53.527 103.948 L 54.007 103.948 C 54.007 93.226 62.719 84.534 73.466 84.534 Z" fill="rgb(117,117,117)" />
                             <g>
@@ -132,34 +132,44 @@ export default function HeroSection() {
                     </div>
 
                     {/* Right Line Group */}
-                    <div className="absolute left-[330px] md:left-[410px] top-[15%] h-[167px] flex flex-col items-center">
+                    <div className="absolute left-[330px] md:left-[500px] top-[8%] h-[167px] flex flex-col items-center">
                         <svg viewBox="0 0 3 167" height="100%" width="3" className="opacity-50">
                             <path d="M 1.8 167 L 1.8 0" fill="transparent" strokeWidth="0.8" stroke="rgba(255,255,255,0.46)" strokeMiterlimit="10" strokeDasharray="4 4" />
                         </svg>
-                        <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" transition={{ delay: 0.8 }} style={{ marginTop: '30px' }}>
+                        {/* <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" transition={{ delay: 0.8 }} style={{ marginTop: '30px' }}>
                             <DiamondSVG />
-                        </motion.div>
+                        </motion.div> */}
                         <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" transition={{ delay: 1.8 }} style={{ marginTop: '100px' }}>
                             <DiamondSVG />
                         </motion.div>
                     </div>
+
+                    {/* Overlay for Fade Effect */}
+                    <div className="absolute -bottom-20 left-[-50%] right-[-50%] h-[300px] bg-gradient-to-t from-black via-black to-transparent z-0 pointer-events-none"></div>
 
                 </div>
             </div>
 
             {/* Main Text Overlapping */}
             <motion.div
-                className="relative z-10 text-center mt-32"
+                className="relative z-10 text-center mt-40 flex flex-col items-center justify-center"
                 variants={heroContainerVariants}
                 initial="hidden"
                 animate="visible"
             >
-                <h1 className="text-8xl md:text-[180px] font-bold tracking-tight mb-2 leading-none lowercase mix-blend-difference text-white">
-                    <motion.div variants={nameVariants} className="inline-block mr-8">yash</motion.div>
-                    <motion.div variants={nameVariants} className="inline-block relative">
+                <h1 className="font-bold tracking-tight leading-[0.5] flex flex-col items-center justify-center">
+                    <motion.span
+                        variants={nameVariants}
+                        className="text-8xl md:text-[160px] lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)] z-10"
+                    >
+                        yash
+                    </motion.span>
+                    <motion.span
+                        variants={nameVariants}
+                        className="text-8xl md:text-[160px] lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)] z-10 -mt-2 md:-mt-6"
+                    >
                         raj
-                        {/* Small dot accent from original design? Keeping simple for now */}
-                    </motion.div>
+                    </motion.span>
                 </h1>
                 <motion.p
                     className="text-gray-400 text-sm md:text-xl tracking-wide font-light"

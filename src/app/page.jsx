@@ -105,7 +105,9 @@ export default function HomePage() {
         {/* Laptop Tooltip */}
         {showTooltip && (
           <div className="inline-flex items-center gap-3 mt-16 bg-[#1a1a1a] border border-gray-800 rounded-full px-6 py-3 text-sm text-gray-300 scroll-fade-in delay-700">
-            <span className="text-2xl">💻</span>
+            <span className="">
+              <img width="25" height="25" src="https://img.icons8.com/material/50/laptop.png" alt="laptop" /> 
+            </span>
             <span>this website works better on a laptop</span>
             <button
               onClick={() => setShowTooltip(false)}

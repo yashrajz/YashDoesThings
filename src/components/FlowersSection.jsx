@@ -7,7 +7,7 @@ const flowerRotationVariants = {
     animate: {
         rotate: 360,
         transition: {
-            duration: 20, // Slow, smooth rotation
+            duration: 5, // Slow, smooth rotation
             repeat: Infinity,
             ease: "linear",
         },
@@ -44,7 +44,7 @@ const stemBreathingVariants = {
 
 export default function FlowersSection() {
     return (
-        <div className="relative pb-20">
+        <div className="relative">
             {/* SVG Definitions */}
             <svg width="0" height="0" style={{ position: 'absolute' }}>
                 <defs>
@@ -90,7 +90,7 @@ export default function FlowersSection() {
                 </defs>
             </svg>
 
-            <div className="flex justify-center gap-16 items-start mb-32">
+            <div className="flex justify-center gap-16 items-start">
                 {/* Flower 1 */}
                 <motion.div
                     className="relative flex flex-col items-center"
