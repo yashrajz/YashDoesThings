@@ -56,7 +56,7 @@ export default function SkillsSection() {
     return (
         <section className="max-w-6xl mx-auto px-8 py-32" id="stack">
             <motion.h2
-                className="text-5xl md:text-6xl font-bold text-center mb-20"
+                className="text-5xl md:text-6xl font-bold text-center mb-20 lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -71,7 +71,7 @@ export default function SkillsSection() {
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }} // Trigger when 20% visible
+                viewport={{ once: true, amount: 0.4 }} // Trigger when 20% visible
             >
                 {allSkills.map((skill, index) => (
                     <motion.span

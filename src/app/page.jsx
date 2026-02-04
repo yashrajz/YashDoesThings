@@ -89,7 +89,7 @@ export default function HomePage() {
 
       {/* Bio Section */}
       <section ref={bioRef} className="max-w-2xl mx-auto px-8 py-20 text-center opacity-0">
-        <h2 className="text-5xl md:text-6xl font-bold mb-12 scroll-fade-in delay-100">hey there!</h2>
+        <h2 className="text-5xl md:text-6xl font-bold mb-12 scroll-fade-in delay-100 lowercase text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]">hey there!</h2>
 
         <p className="text-gray-300 text-lg leading-relaxed mb-8 scroll-fade-in delay-300">
           I'm Yash Raj, a passionate developer and designer based in{" "}
@@ -98,15 +98,20 @@ export default function HomePage() {
           learning, always building!
         </p>
 
-        <p className="text-gray-400 text-base scroll-fade-in delay-500">
-          📧 <span className="text-gray-300">yashrajz.me@gmail.com</span>
-        </p>
+        <div className="relative inline-flex items-center gap-3 px-7 py-1.5 mt-8 bg-zinc-900/50 border border-zinc-800 rounded-sm backdrop-blur-md overflow-hidden group cursor-pointer shadow-lg hover:shadow-xl hover:border-zinc-700 transition-all duration-500 scroll-fade-in delay-500">
+          {/* Glare effect */}
+          <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+
+          <span className="text-xl relative z-10">
+            <img width="17" height="17" src="https://img.icons8.com/material/50/new-post.png" style={{ filter: "invert(1)" }} alt="new-post" /></span>
+          <a href="mailto:yashrajz.me@gmail.com" className="text-gray-400 font-medium tracking-wide relative z-10 group-hover:text-white transition-colors duration-300">yashrajz.me@gmail.com</a>
+        </div>
 
         {/* Laptop Tooltip */}
         {showTooltip && (
           <div className="inline-flex items-center gap-3 mt-16 bg-[#1a1a1a] border border-gray-800 rounded-full px-6 py-3 text-sm text-gray-300 scroll-fade-in delay-700">
             <span className="">
-              <img width="25" height="25" src="https://img.icons8.com/material/50/laptop.png" alt="laptop" /> 
+              <img width="25" height="25" src="https://img.icons8.com/material/50/laptop.png" alt="laptop" />
             </span>
             <span>this website works better on a laptop</span>
             <button

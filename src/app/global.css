@@ -13,6 +13,17 @@
 
   html {
     scroll-behavior: smooth;
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 }
 
@@ -424,10 +435,10 @@
   .skill-tag-motion {
     display: inline-block;
     padding: 12px 20px;
-    border: 2px solid #444;
+    border: 2px solid #dfdddd;
     border-radius: 0.5rem;
     background-color: transparent;
-    color: #999;
+    color: #c0bdbd;
     font-size: 0.875rem;
     font-weight: 600;
     cursor: default;
@@ -436,9 +447,10 @@
   }
 
   .skill-tag-motion:hover {
-    background-color: #444;
-    color: white;
-    border-color: #444;
+    background-color: #fffdfd;
+    color: black;
+    border-color: #fffdfd;
+    cursor: pointer;
   }
 
   /* Responsive: smaller tags on mobile */

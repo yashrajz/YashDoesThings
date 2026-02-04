@@ -56,6 +56,18 @@ const diamondVariants = {
     },
 };
 
+// Reverse Diamond animation
+const diamondReverseVariants = {
+    animate: {
+        y: [0, 60, 0],
+        transition: {
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+        },
+    },
+};
+
 const DiamondSVG = () => (
     <svg width="19" height="19" viewBox="0 0 19 19">
         <path d="M 0.511 9.598 L 9.41 0.511 L 18.496 9.408 L 9.409 18.496 Z" fill="rgb(0,0,0)" strokeWidth="0.28" stroke="rgb(148, 148, 148)" strokeMiterlimit="10" />
@@ -67,7 +79,7 @@ const DiamondSVG = () => (
 
 export default function HeroSection() {
     return (
-        <section className="min-h-screen flex items-center justify-center relative pt-20 pb-15 overflow-hidden bg-black">
+        <section className="min-h-screen flex items-center justify-center relative pt-20 pb-15 overflow-hidden bg-black mb-16">
 
             {/* Background Graphic Cluster */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -101,10 +113,7 @@ export default function HeroSection() {
                         <svg viewBox="0 0 3 178" height="100%" width="3" className="opacity-50">
                             <path d="M 1.8 178 L 1.8 0" fill="transparent" strokeWidth="0.8" stroke="rgba(255,255,255,0.46)" strokeMiterlimit="10" strokeDasharray="4 4" />
                         </svg>
-                        {/* <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" transition={{ delay: 0.5 }} style={{ marginTop: '10px' }}>
-                            <DiamondSVG />
-                        </motion.div> */}
-                        <motion.div className="absolute top-0" variants={diamondVariants} animate="animate" transition={{ delay: 1.5 }} style={{ marginTop: '90px' }}>
+                        <motion.div className="absolute top-0" variants={diamondReverseVariants} animate="animate" transition={{ delay: 1.5 }} style={{ marginTop: '90px' }}>
                             <DiamondSVG />
                         </motion.div>
                     </div>
