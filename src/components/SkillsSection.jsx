@@ -22,8 +22,8 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            delayChildren: 0.2, // Initial delay before animation starts
-            staggerChildren: 0.07, // Stagger delay between children
+            delayChildren: 0.05, // Initial delay before animation starts
+            staggerChildren: 0.05, // Stagger delay between children
         },
     },
 };
