@@ -110,7 +110,7 @@ export default function ProjectDetail() {
                             </div>
 
                             <div className="flex flex-wrap gap-4 pt-0">
-                                {project.github && (
+                                {project.github && project.github !== project.link && (
                                     <a
                                         href={project.github}
                                         target="_blank"
@@ -121,15 +121,19 @@ export default function ProjectDetail() {
                                         <span className="font-bold tracking-wide text-sm">VIEW ON GITHUB</span>
                                     </a>
                                 )}
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white text-black hover:bg-gray-200 transition-all duration-300"
-                                >
-                                    <span className="font-bold tracking-wide text-sm">CHECK IT OUT</span>
-                                    <ExternalLink size={20} />
-                                </a>
+                                {project.link && (
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-3 px-6 py-3 rounded-lg bg-white text-black hover:bg-gray-200 transition-all duration-300"
+                                    >
+                                        <span className="font-bold tracking-wide text-sm">
+                                            {project.link.includes('github.com') ? 'VIEW ON GITHUB' : 'CHECK IT OUT'}
+                                        </span>
+                                        {project.link.includes('github.com') ? <Github size={20} /> : <ExternalLink size={20} />}
+                                    </a>
+                                )}
                             </div>
                         </motion.section>
 
@@ -146,7 +150,7 @@ export default function ProjectDetail() {
                         </motion.div>
 
                         {/* Detailed Content */}
-                        <div className="space-y-16" style={{ fontFamily: "'Gilroy-Bold', sans-serif"}}>
+                        <div className="space-y-16" style={{ fontFamily: "'Gilroy-Bold', sans-serif" }}>
                             {/* Features - Accordion Style */}
                             <section id="features" className="scroll-mt-32">
                                 <h3 className="text-2xl font-bold text-white mb-4" >
@@ -185,7 +189,7 @@ export default function ProjectDetail() {
 
                             {/* Outcome */}
                             <section id="outcome" className="scroll-mt-32" >
-                                <h3 className="text-2xl font-bold text-white mb-4" style={{ fontFamily: "'Gilroy-Bold', sans-serif"}}>
+                                <h3 className="text-2xl font-bold text-white mb-4" style={{ fontFamily: "'Gilroy-Bold', sans-serif" }}>
                                     Outcome
                                 </h3>
                                 <ul className="space-y-6 list-disc list-outside ml-5 text-gray-300">

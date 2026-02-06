@@ -5,6 +5,7 @@ import HeroSection from "../components/HeroSection";
 import FlowersSection from "../components/FlowersSection";
 import SkillsSection from "../components/SkillsSection";
 import ProjectsSection from "../components/ProjectsSection";
+import OriginsSection from "../components/OriginsSection";
 
 export default function HomePage() {
   const [showTooltip, setShowTooltip] = useState(true);
@@ -132,6 +133,9 @@ export default function HomePage() {
 
       {/* Projects Section - Framer Motion */}
       <ProjectsSection />
+
+      {/* Origins / About Section */}
+      <OriginsSection />
 
 
       {/* Sparkles scattered */}
