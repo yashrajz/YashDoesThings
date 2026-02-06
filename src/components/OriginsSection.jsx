@@ -26,7 +26,8 @@ const OriginsSection = () => {
 
                 {/* Illustration Side (Right) */}
                 <div className="flex-1 w-full flex items-center justify-center relative z-20">
-                    {/* Boat Illustration SVG */}
+                    {/* mobius strip Illustration SVG */}
+                    <div className="absolute inset-0 bg-white/5 blur-[40px] rounded-full" />
                     <div className="relative w-64 h-64 md:w-80 md:h-80">
                         {/* Custom Origin SVG with Floating Animation */}
                         <motion.img
