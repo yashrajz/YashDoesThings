@@ -62,7 +62,7 @@ export default function HomePage() {
             WORK
           </a>
           <a
-            href="#resume"
+            href="https://drive.google.com/file/d/19PVm74L-MdBolWdbnC83FanIladvf8xU/view?usp=drive_link"
             className="text-gray-300 hover:text-white nav-link"
           >
             RÉSUMÉ

@@ -24,8 +24,8 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            delayChildren: 0.05, // Initial delay before animation starts
-            staggerChildren: 0.04, // Stagger delay between children
+            delayChildren: 0.03, // Initial delay before animation starts
+            staggerChildren: 0.03, // Stagger delay between children
         },
     },
 };
@@ -34,7 +34,7 @@ const containerVariants = {
 const itemVariants = {
     hidden: {
         opacity: 0,
-        y: 60, // Start from 60px below
+        y: 100, // Start from 60px below
     },
     visible: {
         opacity: 1,
