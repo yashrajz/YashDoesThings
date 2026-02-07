@@ -101,10 +101,10 @@ export default function ProjectDetail() {
                                     <span className="w-1 h-1 bg-gray-500 rounded-full" />
                                     <span className="text-[#00ff88]">{project.status}</span>
                                 </motion.div>
-                                <h1 className="text-5xl md:text-7xl text-white leading-tight tracking-tight" style={{ fontFamily: "'Gilroy-Bold', sans-serif" }}>
+                                <h1 className="text-4xl md:text-6xl lg:text-7xl text-white leading-tight tracking-tight" style={{ fontFamily: "'Gilroy-Bold', sans-serif" }}>
                                     {project.name}
                                 </h1>
-                                <p className="text-xl md:text-xl text-gray-400 font-light leading-relaxed max-w-2xl" style={{ fontFamily: "'Gilroy-Light', sans-serif", fontWeight: "700" }}>
+                                <p className="text-lg md:text-xl text-gray-400 font-light leading-relaxed max-w-2xl" style={{ fontFamily: "'Gilroy-Light', sans-serif", fontWeight: "700" }}>
                                     {project.description}
                                 </p>
                             </div>
@@ -263,7 +263,7 @@ export default function ProjectDetail() {
                         <div className="relative w-28 h-28 md:w-36 md:h-36 lg:w-24 lg:h-24">
                             <div className="absolute inset-0 rounded-full border-4 border-blue-600 bg-black flex items-center justify-center shadow-2xl">
                                 <svg className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                                 </svg>
                             </div>
                             {/* Rotating Text Ring */}
@@ -294,8 +294,8 @@ export default function ProjectDetail() {
                         <div className="inline-block p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 mt-24 animate-bounce">
                             <img src="contact.png" alt="contact" className="w-8 h-8" />
                         </div>
-                        
-                        <h2 className="text-4xl md:text-4xl text-black tracking-tight uppercase leading-none" style={{ fontFamily: "'Gilroy-Bold', sans-serif" }}>
+
+                        <h2 className="text-2xl md:text-4xl text-black tracking-tight uppercase leading-[1.1]" style={{ fontFamily: "'Gilroy-Bold', sans-serif" }}>
                             From Concept to <span className="text-white bg-clip-text">Creation</span>
                             <br />
                             Let's Make it <span className="text-white bg-clip-text">Happen!</span>

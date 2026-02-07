@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
             {/* Header Content */}
             <div className="absolute top-0 left-0 right-0 p-8 z-20 flex justify-between items-start">
                 <div className="max-w-[80%]">
-                    <h3 className="text-xl font-bold text-white leading-snug" style={{ fontFamily: "'Gilroy-Bold', sans-serif", fontWeight: "700", fontSize: "1.5rem" }}>
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white leading-snug" style={{ fontFamily: "'Gilroy-Bold', sans-serif", fontWeight: "700" }}>
                         {project.tagline}
                     </h3>
                 </div>
