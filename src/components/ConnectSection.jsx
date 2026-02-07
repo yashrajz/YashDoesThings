@@ -46,7 +46,7 @@ const ConnectSection = () => {
                     }}
                 >
                     <a
-                        href="https://wa.me/919065811368"
+                        href="https://wa.me/919122024500"
                         target="_blank"
                         rel="noopener noreferrer"
                         draggable={false}
