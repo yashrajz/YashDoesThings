@@ -14,11 +14,11 @@ const ProjectsSection = () => {
     const [cursorActive, setCursorActive] = React.useState(false);
 
     return (
-        <section className="relative py-32" id="work">
+        <section className="relative py-16 md:py-24 lg:py-32" id="work">
             <ProjectCursor isActive={cursorActive} />
-            <div className="projects-container mx-auto px-4">
+            <div className="projects-container mx-auto px-2 md:px-4">
                 <motion.div
-                    className="w-full mb-16"
+                    className="w-full mb-8 md:mb-12 lg:mb-16"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -28,12 +28,12 @@ const ProjectsSection = () => {
                         style={{
                             fontFamily: "'Gilroy-Bold', 'Gilroy-Bold Placeholder', sans-serif",
                             fontWeight: 600,
-                            fontSize: '54px',
-                            lineHeight: '58.44px',
+                            fontSize: 'clamp(32px, 7vw, 54px)',
+                            lineHeight: '1.08',
                             color: 'rgb(243, 243, 243)',
                             letterSpacing: '-0.03em'
                         }}>
-                        <div className="flex items-center justify-center gap-8 md:gap-16">
+                        <div className="flex items-center justify-center gap-4 md:gap-8 lg:gap-16">
                             <TitleDecoration />
                             <span>A quick bite of <br />my work</span>
                             <TitleDecoration />
@@ -53,7 +53,7 @@ const ProjectsSection = () => {
                 `}</style>
 
                 <div className="relative">
-                    <div className="flex flex-nowrap overflow-x-auto overflow-y-hidden gap-8 px-4 pb-8 snap-x snap-mandatory no-scrollbar" style={{ scrollBehavior: 'smooth' }}>
+                    <div className="flex flex-nowrap overflow-x-auto overflow-y-hidden gap-4 md:gap-8 px-2 md:px-4 pb-8 snap-x snap-mandatory no-scrollbar" style={{ scrollBehavior: 'smooth' }}>
                         {projects.map((project, index) => (
                             <motion.div
                                 key={index}
@@ -65,7 +65,7 @@ const ProjectsSection = () => {
                             >
                                 <Link
                                     to={`/projects/${project.slug}`}
-                                    className="project-card w-[350px] h-[550px] block text-inherit no-underline"
+                                    className="project-card w-[280px] sm:w-[320px] md:w-[350px] h-[480px] sm:h-[520px] md:h-[550px] block text-inherit no-underline"
                                     onMouseEnter={() => setCursorActive(true)}
                                     onMouseLeave={() => setCursorActive(false)}
                                 >
@@ -75,21 +75,21 @@ const ProjectsSection = () => {
                                         transition={{ duration: 0.3 }}
                                     >
                                         {/* Top: Description */}
-                                        <div className="card-top p-0 border-b border-[var(--color-border)] flex-grow flex items-start">
+                                        <div className="card-top p-4 md:p-0 border-b border-[var(--color-border)] flex-grow flex items-start">
                                             <div>
-                                                <p className="project-description text-lg leading-relaxed text-[var(--color-text)] transition-colors duration-400" style={{ textAlign: 'center' }}>
+                                                <p className="project-description text-base md:text-lg leading-relaxed text-[var(--color-text)] transition-colors duration-400" style={{ textAlign: 'center' }}>
                                                     {project.description}
                                                 </p>
-                                                <p className="project-tagline text-sm italic text-[var(--color-text-secondary)] mt-4 transition-colors duration-400" style={{ textAlign: 'center' }}>
+                                                <p className="project-tagline text-xs md:text-sm italic text-[var(--color-text-secondary)] mt-3 md:mt-4 transition-colors duration-400" style={{ textAlign: 'center' }}>
                                                     {project.tagline}
                                                 </p>
                                             </div>
                                         </div>
 
                                         {/* Middle: Title & Meta */}
-                                        <div className="card-middle p-6 pt-2 border-b border-[var(--color-border)]" style={{ textAlign: 'center' }}>
+                                        <div className="card-middle p-4 md:p-6 pt-2 border-b border-[var(--color-border)]" style={{ textAlign: 'center' }}>
                                             <h3 className="project-name font-extrabold uppercase mb-2 text-white transition-colors duration-400"
-                                                style={{ fontFamily: "'Gilroy-Bold', sans-serif", fontSize: '23.5px' }}>
+                                                style={{ fontFamily: "'Gilroy-Bold', sans-serif", fontSize: 'clamp(18px, 4vw, 23.5px)' }}>
                                                 {project.name}
                                             </h3>
                                             <div className="project-tags flex gap-2 flex-wrap text-xs font-bold uppercase tracking-wider" style={{ textAlign: 'center', justifyContent: 'center' }}>
@@ -100,8 +100,8 @@ const ProjectsSection = () => {
                                         </div>
 
                                         {/* Bottom: View Button */}
-                                        <div className="card-bottom p-6 flex items-end justify-center h-24">
-                                            <span className="project-link-text text-sm font-bold uppercase tracking-widest px-6 py-2 rounded-lg border border-transparent transition-all duration-400">
+                                        <div className="card-bottom p-4 md:p-6 flex items-end justify-center h-20 md:h-24">
+                                            <span className="project-link-text text-xs md:text-sm font-bold uppercase tracking-widest px-4 md:px-6 py-2 rounded-lg border border-transparent transition-all duration-400">
                                                 VIEW
                                             </span>
                                         </div>
@@ -111,7 +111,7 @@ const ProjectsSection = () => {
                         ))}
                     </div>
                     {/* Subtle Gradient Indicator */}
-                    <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black via-black/60 to-transparent pointer-events-none z-10" />
+                    <div className="absolute right-0 top-0 h-full w-16 md:w-24 bg-gradient-to-l from-black via-black/60 to-transparent pointer-events-none z-10" />
                 </div>
             </div>
         </section>

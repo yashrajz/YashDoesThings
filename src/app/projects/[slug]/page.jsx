@@ -258,10 +258,43 @@ export default function ProjectDetail() {
                     <div className="absolute inset-0 opacity-80" />
                     <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
 
+                    {/* Open to Work Badge - Positioned Right */}
+                    <div className="absolute right-10 md:right-16 lg:right-96 top-80 -translate-y-1/2 z-20">
+                        <div className="relative w-28 h-28 md:w-36 md:h-36 lg:w-24 lg:h-24">
+                            <div className="absolute inset-0 rounded-full border-4 border-blue-600 bg-black flex items-center justify-center shadow-2xl">
+                                <svg className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            {/* Rotating Text Ring */}
+                            <motion.div
+                                className="absolute inset-0 w-full h-full"
+                                animate={{ rotate: 360 }}
+                                transition={{
+                                    repeat: Infinity,
+                                    duration: 8,
+                                    ease: "linear"
+                                }}
+                            >
+                                <svg className="w-full h-full" viewBox="0 0 120 120">
+                                    <defs>
+                                        <path id="circlePath" d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" />
+                                    </defs>
+                                    <text className="text-[10px] md:text-[11px] lg:text-[12px] font-bold tracking-[0.3em] fill-white uppercase">
+                                        <textPath href="#circlePath" startOffset="0%">
+                                            OPEN TO WORK • OPEN TO WORK •
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </motion.div>
+                        </div>
+                    </div>
+
                     <div className="relative z-10 py-8 px-8 text-center space-y-8">
                         <div className="inline-block p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 mt-24 animate-bounce">
                             <img src="contact.png" alt="contact" className="w-8 h-8" />
                         </div>
+                        
                         <h2 className="text-4xl md:text-4xl text-black tracking-tight uppercase leading-none" style={{ fontFamily: "'Gilroy-Bold', sans-serif" }}>
                             From Concept to <span className="text-white bg-clip-text">Creation</span>
                             <br />

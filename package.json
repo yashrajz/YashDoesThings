@@ -11,21 +11,15 @@
 		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
 	},
 	"dependencies": {
-		"@emotion/react": "11.11.4",
-		"@emotion/styled": "11.11.0",
 		"@react-router/fs-routes": "^7.6.0",
 		"@react-router/node": "^7.6.0",
 		"@react-router/serve": "^7.6.0",
-		"classnames": "^2.5.1",
 		"framer-motion": "^12.30.0",
 		"isbot": "^5",
 		"lucide-react": "0.358.0",
-		"motion": "^12.7.4",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-router": "^7.6.0",
-		"react-router-dom": "^7.6.0",
-		"tailwind-merge": "^3.2.0"
+		"react-router": "^7.6.0"
 	},
 	"devDependencies": {
 		"@react-router/dev": "^7.6.0",

@@ -8,8 +8,12 @@ import {
 } from 'react-router';
 
 import './global.css';
+import { useDevToolsProtection } from '../utils/useDevToolsProtection';
 
 export default function App() {
+  // Enable DevTools protection (disables F12, Ctrl+Shift+I/J/C/K, Ctrl+U, and right-click)
+  useDevToolsProtection();
+
   return (
     <html lang="en">
       <head>
