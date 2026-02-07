@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const ConnectSection = () => {
     return (
-        <section className="relative w-full py-40 flex flex-col items-center justify-center px-4 overflow-hidden bg-black text-white">
+        <section id="connect" className="relative w-full py-40 flex flex-col items-center justify-center px-4 overflow-hidden bg-black text-white">
 
             {/* Header Text */}
             <motion.h2
@@ -34,7 +34,7 @@ const ConnectSection = () => {
 
                 {/* 2. The QR Code Sticker (Floating inside) */}
                 <motion.div
-                    className="absolute top-[30%] left-[37%] -translate-x-1/2 -translate-y-1/2 z-20 w-[100px] h-[100px] md:w-[150px] md:h-[150px]"
+                    className="absolute top-[30%] left-[37%] -translate-x-1/2 -translate-y-1/2 z-20 w-[70px] h-[70px] md:w-[150px] md:h-[150px]"
                     animate={{
                         y: [0, -10, 0],
                         rotate: [2, -2, 2]

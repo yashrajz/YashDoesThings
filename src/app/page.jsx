@@ -8,6 +8,7 @@ import ProjectsSection from "../components/ProjectsSection";
 import OriginsSection from "../components/OriginsSection";
 import InterestsSection from "../components/InterestsSection";
 import ConnectSection from "../components/ConnectSection";
+import Footer from "../components/Footer";
 
 export default function HomePage() {
     const [showTooltip, setShowTooltip] = useState(true);
@@ -193,6 +194,9 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+
+            {/* Final Footer */}
+            <Footer />
         </div>
     );
 }
