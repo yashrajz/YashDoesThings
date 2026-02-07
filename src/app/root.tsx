@@ -19,8 +19,11 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png" href="/projects/favicon.png" />
+        <link rel="icon" type="image/png" href="/faviconAndroid.png" />
+        <link rel="apple-touch-icon" href="/faviconAndroid.png" />
+        <meta name="theme-color" content="#1a1a1a" />
         <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+        <title>Yash Raj</title>
         <Meta />
         <Links />
       </head>
@@ -42,7 +45,9 @@ export function ErrorBoundary() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Oops!</title>
-        <link rel="icon" type="image/png" href="/projects/favicon.png" />
+        <link rel="icon" type="image/png" href="/faviconAndroid.png" />
+        <link rel="apple-touch-icon" href="/faviconAndroid.png" />
+        <meta name="theme-color" content="#1a1a1a" />
         <Meta />
         <Links />
       </head>

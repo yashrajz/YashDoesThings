@@ -48,15 +48,7 @@ export default function HomePage() {
             {/* Navigation */}
             <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-6 flex items-center justify-between animate-nav-enter">
                 <div className="text-white logo-hover cursor-pointer">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                        <path
-                            d="M8 8 L20 28 L32 8 M20 28 L20 32"
-                            stroke="white"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    </svg>
+                    <img src="/projects/logo.png" alt="Logo" className="h-9 w-auto" />
                 </div>
                 <div className="flex gap-8 text-sm tracking-wider">
                     <a
