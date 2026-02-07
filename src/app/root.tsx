@@ -19,6 +19,7 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="/projects/favicon.png" />
         <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
         <Meta />
         <Links />
@@ -41,6 +42,7 @@ export function ErrorBoundary() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Oops!</title>
+        <link rel="icon" type="image/png" href="/projects/favicon.png" />
         <Meta />
         <Links />
       </head>

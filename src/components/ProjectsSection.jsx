@@ -41,16 +41,7 @@ const ProjectsSection = () => {
                     </h2>
                 </motion.div>
 
-                {/* Custom Scrollbar Hide Styles */}
-                <style jsx global>{`
-                    .no-scrollbar::-webkit-scrollbar {
-                        display: none;
-                    }
-                    .no-scrollbar {
-                        -ms-overflow-style: none;
-                        scrollbar-width: none;
-                    }
-                `}</style>
+
 
                 <div className="relative">
                     <div className="flex flex-nowrap overflow-x-auto overflow-y-hidden gap-4 md:gap-8 px-2 md:px-4 pb-8 snap-x snap-mandatory no-scrollbar" style={{ scrollBehavior: 'smooth' }}>

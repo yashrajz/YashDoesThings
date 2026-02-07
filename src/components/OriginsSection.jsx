@@ -33,7 +33,8 @@ const OriginsSection = () => {
                         <motion.img
                             src="/projects/originSvg2.svg"
                             alt="Origins Illustration"
-                            className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+                            draggable="false"
+                            className="w-full h-full object-contain select-none drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]"
                             animate={{ y: [0, -15, 0] }}
                             transition={{
                                 duration: 4,
